@@ -177,7 +177,18 @@ footer {
 }
 </style>
 </head>
+<script>
+let currentReview = 0;
+const reviews = document.querySelectorAll(".review");
 
+function showNextReview() {
+    reviews[currentReview].classList.remove("active");
+    currentReview = (currentReview + 1) % reviews.length;
+    reviews[currentReview].classList.add("active");
+}
+
+setInterval(showNextReview, 4000);
+</script>
 <body>
 
 <header>
