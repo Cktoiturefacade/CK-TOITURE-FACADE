@@ -177,19 +177,23 @@ footer {
 }
 </style>
 </head>
-<script>
-let currentReview = 0;
-const reviews = document.querySelectorAll(".review");
 
-function showNextReview() {
-    reviews[currentReview].classList.remove("active");
-    currentReview = (currentReview + 1) % reviews.length;
-    reviews[currentReview].classList.add("active");
-}
+<body><script>
+document.addEventListener("DOMContentLoaded", function () {
+    let currentReview = 0;
+    const reviews = document.querySelectorAll(".review");
 
-setInterval(showNextReview, 4000);
+    if (reviews.length === 0) return;
+
+    function showNextReview() {
+        reviews[currentReview].classList.remove("active");
+        currentReview = (currentReview + 1) % reviews.length;
+        reviews[currentReview].classList.add("active");
+    }
+
+    setInterval(showNextReview, 4000);
+});
 </script>
-<body>
 
 <header>
     <h1>CK TOITURE & FAÇADE</h1>
