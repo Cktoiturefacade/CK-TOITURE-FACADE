@@ -177,22 +177,7 @@ footer {
 }
 </style>
 </head>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    let currentReview = 0;
-    const reviews = document.querySelectorAll(".review");
 
-    if (reviews.length === 0) return;
-
-    function showNextReview() {
-        reviews[currentReview].classList.remove("active");
-        currentReview = (currentReview + 1) % reviews.length;
-        reviews[currentReview].classList.add("active");
-    }
-
-    setInterval(showNextReview, 4000);
-});
-</script>
 <body>
 
 <header>
@@ -216,6 +201,8 @@ document.addEventListener("DOMContentLoaded", function () {
         Nous vous proposons des solutions rapides, efficaces et durables pour redonner tout son éclat à votre maison… et surtout la protéger dans le temps.
         Nous intervenons rapidement pour protéger et rénover votre habitation.
     </p>
+    <p><strong>+ de 100 chantiers réalisés – Clients satisfaits</strong></p>
+
 </section>
 
 <section class="section">
@@ -322,7 +309,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <footer>
     <p>CK Toiture Façade</p>
-</footer>
+    <p>Entreprise assurée – Responsabilité civile professionnelle</p>
 
+</footer>
+    
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let currentReview = 0;
+    const reviews = document.querySelectorAll(".review");
+
+    if (reviews.length === 0) return;
+
+    function showNextReview() {
+        reviews[currentReview].classList.remove("active");
+        currentReview = (currentReview + 1) % reviews.length;
+        reviews[currentReview].classList.add("active");
+    }
+
+    setInterval(showNextReview, 4000);
+});
+</script>
+    
 </body>
 </html>
