@@ -1,37 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Page principale -->
-  <url>
-    <loc>https://cktoiturefacade.github.io/CK-TOITURE-FACADE/</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+   <url>
+      <loc>https://cktoiturefacade.github.io/CK-TOITURE-FACADE/</loc>
+      <priority>1.0</priority>
+   </url>
 
-  <!-- Sections importantes (SEO interne même si ancrées) -->
-  <url>
-    <loc>https://cktoiturefacade.github.io/CK-TOITURE-FACADE/#services</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://cktoiturefacade.github.io/CK-TOITURE-FACADE/#realisations</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://cktoiturefacade.github.io/CK-TOITURE-FACADE/#about</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://cktoiturefacade.github.io/CK-TOITURE-FACADE/#contact</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-  </url>
+   <url>
+      <loc>https://cktoiturefacade.github.io/CK-TOITURE-FACADE/index.html</loc>
+   </url>
 
 </urlset>
