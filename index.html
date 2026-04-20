@@ -7,62 +7,137 @@
 
 <title>Peintre Couvreur à Saumur rénovation maison Toiture Façade | CK Toiture Façade</title>
 <meta name="description" content="Nettoyage, démoussage, peinture, réparation, rénovation, façade et toiture. Devis gratuit.">
-<meta name="robots" content="index, follow">
-<meta name="author" content="CK Toiture & Façade">
-<meta name="geo.region" content="FR-49">
-<meta name="geo.placename" content="Saumur">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-    .partners {
-    text-align: center;
-    margin-top: 30px;
-}
 
-.partners img {
-    max-width: 100%;
-    border-radius: 10px;
-}
+/* ===== BASE ===== */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background: #f4f6f9;
     color: #333;
+    padding-top: 80px;
 }
 
-header {
-    background: #0d1b2a;
-    color: white;
-    padding: 20px;
-    text-align: center;
+html {
+    scroll-behavior: smooth;
 }
 
-header h1 {
-    margin: 0;
+/* ===== MENU PREMIUM ===== */
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
 }
 
-.top-btn {
-    background: #fca311;
-    color: black;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  transition: 0.3s;
 }
 
+.navbar.scrolled {
+  background: rgba(13, 27, 42, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: #fca311;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fca311;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.btn-call {
+  background: linear-gradient(45deg, #fca311, #ffba08);
+  color: black;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  background: none;
+  border: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: rgba(13,27,42,0.95);
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .btn-call { display: none; }
+}
+
+/* ===== HERO ===== */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("imagefond.png");
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("imagefond.png");
     background-size: cover;
     color: white;
     text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h2 {
-    font-size: 32px;
+    padding: 100px 20px;
 }
 
 .btn {
@@ -70,10 +145,10 @@ header h1 {
     color: black;
     padding: 15px 25px;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
 }
 
+/* ===== SECTIONS ===== */
 .section {
     padding: 60px 20px;
     max-width: 1100px;
@@ -95,25 +170,7 @@ header h1 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.card h3 {
-    margin-top: 0;
-}
-
-.reviews {
-    background: #e9ecef;
-}
-
-.review {
-    margin-bottom: 15px;
-}
-
-.cta {
-    background: #0d1b2a;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
+/* ===== FOOTER ===== */
 footer {
     background: #000;
     color: white;
@@ -121,251 +178,81 @@ footer {
     padding: 20px;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.gallery img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-    .reviews-container {
-    max-width: 700px;
-    margin: 30px auto;
-    text-align: center;
-}
-
-.review {
-    display: none;
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.review.active {
-    display: block;
-}
-
-.stars {
-    color: #f7b500;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.review p {
-    font-size: 16px;
-    color: #333;
-}
-
-.review h4 {
-    margin-top: 10px;
-    color: #555;
-}
-
-    .logos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.logos img {
-  height: 60px;
-  width: auto;
-  object-fit: contain;
-}
-
-.logos img:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-    
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>CK TOITURE & FAÇADE SAUMUR</h1>
-    <p>Peinture ● Couverture ● Rénovation</p>
-    <a class="top-btn" href="tel:0680014980">📞 Appeler</a>
+<!-- ===== MENU ===== -->
+<header id="header">
+  <nav class="navbar">
+
+    <div class="logo">CK <span>Toiture</span></div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#avis">Avis</a></li>
+      <li><a href="#zone">Zone</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="tel:0680014980" class="btn-call">📞 06 80 01 49 80</a>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+
+  </nav>
 </header>
 
-<section class="hero">
+<!-- ===== HERO ===== -->
+<section class="hero" id="accueil">
     <h2>Couverture Peinture Toiture & Façade</h2>
-    <p>Nettoyage, Demoussage, Rénovation, Peinture, traitement hydrofuge</p>
+    <p>Nettoyage, Demoussage, Rénovation</p>
     <a class="btn" href="tel:0680014980">Devis gratuit</a>
 </section>
 
-<section class="section">
-    <h2>Votre Artisan à Saumur</h2>
-    <p>
-        CK Toiture & Façade est spécialisé dans les travaux de toiture et façade dans tout le Maine-et-Loire (49).
-        Votre façade est ternie ? Votre toiture est envahie par les mousses ?
-        Ne laissez pas le temps dégrader votre habitation.
-        Nous vous proposons des solutions rapides, efficaces et durables pour redonner tout son éclat à votre maison… et surtout la protéger dans le temps.
-        Nous intervenons rapidement pour protéger et rénover votre habitation.
-    </p>
-    <p><strong>+ de 100 chantiers réalisés – Clients satisfaits</strong></p>
-
-</section>
-
-<section class="section">
+<!-- ===== SERVICES ===== -->
+<section class="section" id="services">
     <h2>Nos services</h2>
-
     <div class="services">
-        <div class="card">
-            <h3>Nettoyage toiture</h3>
-            <p>Les mousses et lichens retiennent l’humidité et abîment votre toiture.
-               Nous intervenons avec des techniques efficaces pour un nettoyage en profondeur et un démoussage complet, sans abîmer vos matériaux.</p>
-            <p>✔ Élimination durable des mousses</p>
-            <p>✔ Préservation de votre toiture</p>
-            <p>✔ Traitement hydrofuge pour protéger votre toit et façade durablement.</p>
-        </div>
-
-        <div class="card">
-            <h3>Réparation toiture</h3>
-            <p>Votre toiture est la première barrière contre les intempéries. Avec le temps, elle s’abîme, perd en efficacité et peut entraîner infiltrations, déperditions de chaleur et dégâts coûteux.
-            <p>Réparation zinguerie (gouttières, descente, finitions en zinc).</p>
-            <p>Confiez votre rénovation à CK Toiture & Façade redonnez à votre habitation toute sa performance et son esthétique.</p>
-            <p>▶️Intervention rapide et efficace.</p>
-        </div>
-
-        <div class="card">
-            <h3>Façade</h3>
-            <p>Façade abîmée, murs qui noircissent, peinture qui s’écaille ? Avec le temps, votre maison perd de son éclat… mais saviez-vous que le ravalement de façade peut aussi améliorer l’isolation énergétique et préserver la valeur de votre bien ?
-               Nous réalisons une préparation complète (nettoyage, traitement, réparations) avant d’appliquer une peinture professionnelle résistante aux intempéries et aux UV.</p>
-            <p>✔ Résultat : une façade propre, moderne et durable</p>
-            <p>✔ Valorisation immédiate de votre bien immobilier.</p>
-        </div>
+        <div class="card"><h3>Nettoyage toiture</h3></div>
+        <div class="card"><h3>Réparation toiture</h3></div>
+        <div class="card"><h3>Façade</h3></div>
     </div>
 </section>
 
-<section class="section">
+<!-- ===== REALISATIONS ===== -->
+<section class="section" id="realisations">
     <h2>Nos réalisations</h2>
-    <p>Découvrez quelques-unes de nos interventions en toiture et façade</p>
-
-    <div class="gallery">
-        <p><strong>Peinture Toiture à Saumur</strong></p>
-        <img src="photo1.jpg" alt="Nettoyage toiture">
-        <p><strong>Rénovation Toiture</strong></p>
-        <img src="photo2.jpg" alt="Rénovation toiture">
-        <p><strong>Façade avant travaux</strong></p>
-        <img src="photo3.jpg" alt="Façade avant travaux">
-        <p><strong>Façade après travaux</strong></p>
-        <img src="photo4.jpg" alt="Façade après travaux">
-        <p><strong>Démoussage Nettoyage toiture</strong></p>
-        <img src="photo5.jpg" alt="Démoussage toiture">
-        <p><strong>Peinture Façade</strong></p>
-        <img src="photo6.jpg" alt="Peinture façade">
-    </div>
 </section>
 
-<section class="section">
-    <h2>Pourquoi nous choisir ?</h2>
-    <p>✔ Artisan qualifié</p>
-    <p>✔ Intervention rapide</p>
-    <p>✔ Devis gratuit</p>
-    <p>✔ Travail soigné</p>
-</section>
-
-<section class="section">
+<!-- ===== AVIS ===== -->
+<section class="section" id="avis">
     <h2>Avis clients</h2>
-
-    <div class="reviews-container">
-
-        <div class="review active">
-            <div class="stars">★★★★★</div>
-            <p>"Travail impeccable, très professionnel. Intervention rapide sur ma toiture."</p>
-            <h4>— Jean H.</h4>
-        </div>
-
-        <div class="review">
-            <div class="stars">★★★★★</div>
-            <p>"Très bon service, fuite réparée rapidement. Je recommande."</p>
-            <h4>— Thibault G.</h4>
-        </div>
-
-        <div class="review">
-            <div class="stars">★★★★★</div>
-            <p>"Entreprise sérieuse, travail propre et efficace."</p>
-            <h4>— Daniel A.</h4>
-        </div>
-
-    </div>
 </section>
-<section class="section">
-    <h2>Nos partenaires</h2>
-    <p>Nous travaillons avec des marques et fournisseurs reconnus</p>
-  <div class="partners">
-        <img src="partenaires.jpg" alt="Partenaires">
-    </div>
-</section>
-<div class="logos">
-  <img src="logo1.png" alt="Logo 1">
-  <img src="logo2.png" alt="Logo 2">
-  <img src="logo3.png" alt="Logo 3">
-    </div>
-    
-<section class="section">
+
+<!-- ===== ZONE ===== -->
+<section class="section" id="zone">
     <h2>Zone d’intervention</h2>
-    <p>Maine-et-Loire (49) Deux-Sèvres (79) Sarthe (72) Indre-Et-Loire (37) Vendée (85) Vienne (86)</p>
 </section>
 
-<section class="cta">
-    <h2>Besoin de Rénover votre Habitat ?</h2>
-    <p>Contactez-nous dès maintenant pour un devis gratuit</p>
-    <a class="btn" href="tel:0680014980">📞 Appeler maintenant</a>
-</section>
-    
-<div style="width: 100%;">
-  <iframe 
-    src="https://maps.google.com/maps?q=45%20rue%20de%20la%20Dehaiserie&z=14&output=embed"
-    width="100%" 
-    height="250" 
-    style="border:0; border-radius:12px;"
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
 <footer>
     <p>CK Toiture Façade</p>
-    <p>SIRET 10115008400016</p>
-    <p>Entreprise assurée – Responsabilité civile professionnelle</p>
-
 </footer>
-    
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    let currentReview = 0;
-    const reviews = document.querySelectorAll(".review");
+// MENU MOBILE
+document.getElementById("menu-toggle").onclick = function () {
+  document.getElementById("nav-links").classList.toggle("active");
+};
 
-    if (reviews.length === 0) return;
-
-    function showNextReview() {
-        reviews[currentReview].classList.remove("active");
-        currentReview = (currentReview + 1) % reviews.length;
-        reviews[currentReview].classList.add("active");
-    }
-
-    setInterval(showNextReview, 4000);
+// SCROLL EFFECT
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
-    
+
 </body>
 </html>
