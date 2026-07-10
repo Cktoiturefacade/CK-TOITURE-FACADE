@@ -527,18 +527,33 @@ footer {
     
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+    // Avis
     let currentReview = 0;
     const reviews = document.querySelectorAll(".review");
 
-    if (reviews.length === 0) return;
-
-    function showNextReview() {
-        reviews[currentReview].classList.remove("active");
-        currentReview = (currentReview + 1) % reviews.length;
-        reviews[currentReview].classList.add("active");
+    if(reviews.length){
+        setInterval(function(){
+            reviews[currentReview].classList.remove("active");
+            currentReview = (currentReview + 1) % reviews.length;
+            reviews[currentReview].classList.add("active");
+        },4000);
     }
 
-    setInterval(showNextReview, 4000);
+    // Menu
+    const menu = document.querySelector(".menu");
+    const btn = document.getElementById("menuBtn");
+
+    btn.addEventListener("click",()=>{
+        menu.classList.toggle("open");
+    });
+
+    document.querySelectorAll(".menu a").forEach(link=>{
+        link.addEventListener("click",()=>{
+            menu.classList.remove("open");
+        });
+    });
+
 });
 </script>
     
