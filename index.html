@@ -763,31 +763,53 @@ Réparation et entretien de toiture réalisés par votre artisan local.
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Avis
-    let currentReview = 0;
-    const reviews = document.querySelectorAll(".review");
+  // Défilement des avis clients
+  let currentReview = 0;
+  const reviews = document.querySelectorAll(".review");
 
-    if(reviews.length){
-        setInterval(function(){
-            reviews[currentReview].classList.remove("active");
-            currentReview = (currentReview + 1) % reviews.length;
-            reviews[currentReview].classList.add("active");
-        },4000);
-    }
+  if (reviews.length > 1) {
+    setInterval(function () {
+      reviews[currentReview].classList.remove("active");
+      currentReview = (currentReview + 1) % reviews.length;
+      reviews[currentReview].classList.add("active");
+    }, 4000);
+  }
 
-    // Menu
-    const menu = document.querySelector(".menu");
-    const btn = document.getElementById("menuBtn");
+  // Menu mobile
+  const toggle = document.querySelector(".ck-toggle");
+  const nav = document.querySelector(".ck-nav");
 
-    btn.addEventListener("click",()=>{
-        menu.classList.toggle("open");
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      const open = nav.classList.toggle("active");
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.textContent = open ? "✕" : "☰";
     });
+  }
 
-    document.querySelectorAll(".menu a").forEach(link=>{
-        link.addEventListener("click",()=>{
-            menu.classList.remove("open");
-        });
+  // Menu déroulant
+  const dropdown = document.querySelector(".ck-dropdown");
+  const dropbtn = document.querySelector(".ck-dropbtn");
+
+  if (dropdown && dropbtn) {
+    dropbtn.addEventListener("click", function () {
+      const open = dropdown.classList.toggle("open");
+      dropbtn.setAttribute("aria-expanded", String(open));
     });
+  }
+
+  // Fermeture après sélection
+  if (nav) {
+    nav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        nav.classList.remove("active");
+        if (toggle) {
+          toggle.textContent = "☰";
+          toggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  }
 
 });
 </script>
