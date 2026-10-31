@@ -475,25 +475,37 @@ footer {
     width: 100%;
     box-shadow: none;
     border-radius: 0;
-  }
-
-  .ck-dropdown:hover .ck-dropdown-content {
-    display: none;
-  }
-
-  .ck-dropdown:focus-within .ck-dropdown-content {
-    display: block;
-  }
-
-  .ck-contact {
-    text-align: center !important;
-  }
-}
 
 </style>
 </head>
 
 <body>
+ <header class="ck-header">
+  <a href="#accueil" class="ck-logo">CK <span>TOITURE & FAÇADE</span></a>
+
+  <button class="ck-toggle" type="button" aria-label="Ouvrir le menu">☰</button>
+
+  <nav class="ck-nav">
+    <a href="#accueil">Accueil</a>
+
+    <div class="ck-dropdown">
+      <button class="ck-dropbtn" type="button">Nos services ▾</button>
+      <div class="ck-dropdown-content">
+        <a href="couvreur-saumur.html">Couverture & rénovation</a>
+        <a href="peinture-facade.html">Peinture façade</a>
+        <a href="nettoyage-toiture.html">Nettoyage toiture</a>
+        <a href="#services">Traitement hydrofuge</a>
+        <a href="#services">Peinture toiture</a>
+        <a href="#services">Peinture intérieure</a>
+        <a href="#services">Nettoyage panneaux solaires</a>
+      </div>
+    </div>
+
+    <a href="#realisations">Réalisations</a>
+    <a href="#avis">Avis clients</a>
+    <a href="#contact" class="ck-contact">Demander un devis</a>
+  </nav>
+ </header>
 
 <button id="menuBtn">☰</button>
 
