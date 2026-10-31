@@ -2,49 +2,6 @@
 <html lang="fr">
 <head>
 
- <header class="ck-header">
-  <a href="index.html" class="ck-logo">
-    CK <span>TOITURE & FAÇADE</span>
-  </a>
-
-  <button class="ck-toggle" aria-label="Ouvrir le menu"
-    aria-expanded="false">
-    ☰
-  </button>
-
-  <nav class="ck-nav">
-    <a href="index.html">Accueil</a>
-
-    <div class="ck-dropdown">
-      <button class="ck-dropbtn">Nos services ▾</button>
-      <div class="ck-dropdown-content">
-        <a href="couverture-renovation.html">Couverture & Rénovation</a>
-        <a href="peinture-facade.html">Ravalement & Peinture façade</a>
-        <a href="nettoyage-toiture.html">Nettoyage & Démoussage toiture</a>
-        <a href="traitement-hydrofuge.html">Traitement hydrofuge</a>
-        <a href="peinture-toiture.html">Peinture toiture</a>
-        <a href="peinture-interieure.html">Peinture intérieure</a>
-        <a href="nettoyage-panneaux-solaires.html">Nettoyage panneaux solaires</a>
-      </div>
-    </div>
-
-    <a href="realisations.html">Nos réalisations</a>
-    <a href="index.html#apropos">À propos</a>
-    <a href="index.html#contact" class="ck-contact">Demander un devis</a>
-  </nav>
-</header>
-
-<script>
-const toggle = document.querySelector(".ck-toggle");
-const nav = document.querySelector(".ck-nav");
-
-toggle.addEventListener("click", () => {
-  const open = nav.classList.toggle("active");
-  toggle.setAttribute("aria-expanded", open);
-  toggle.textContent = open ? "✕" : "☰";
-});
-</script>
-
  <link rel="icon" type="image/png" href="/favicon.png">
 
  <script type="application/ld+json">
