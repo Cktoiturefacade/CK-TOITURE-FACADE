@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Peinture intérieure à Saumur (49) | CK Toiture & Façade</title>
+
+<meta name="description" content="CK Toiture & Façade réalise vos travaux de peinture intérieure à Saumur et alentours : murs, plafonds, rénovation et finitions soignées. Devis gratuit.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="icon" type="image/png" href="/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.ck-header {
+  background: #111;
+  color: white;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.ck-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.ck-logo span {
+  display: block;
+  color: #f28c00;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.ck-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.ck-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ck-nav a:hover {
+  color: #f28c00;
+}
+
+.ck-contact {
+  background: #f28c00;
+  color: #111 !important;
+  padding: 12px 17px;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 540px;
+  background:
+    linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.62)),
+    url("peinture-interieure.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 70px 20px;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin: 15px 0;
+}
+
+.hero p {
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.badge {
+  display: inline-block;
+  background: #f28c00;
+  color: #111;
+  padding: 9px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  background: #f28c00;
+  color: #111;
+  text-decoration: none;
+  padding: 16px 25px;
+  border-radius: 6px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.btn:hover {
+  background: white;
+}
+
+.btn-white {
+  background: white;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 50px 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.07);
+}
+
+.section h2 {
+  text-align: center;
+  color: #111;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.intro {
+  text-align: center;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.card {
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-bottom: 4px solid #f28c00;
+}
+
+.card h3 {
+  color: #111;
+  margin-top: 0;
+}
+
+.card p {
+  line-height: 1.7;
+}
+
+.advantages {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.advantages h2 {
+  color: #f28c00;
+}
+
+.advantages p {
+  line-height: 2;
+}
+
+.cta {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 55px 20px;
+}
+
+.cta h2 {
+  color: #f28c00;
+}
+
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media(max-width:850px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .ck-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 15px;
+  }
+
+  .ck-nav.active {
+    display: flex;
+  }
+
+  .ck-nav a {
+    padding: 13px 5px;
+  }
+
+  .ck-contact {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .section {
+    margin: 20px 12px;
+    padding: 35px 20px;
+  }
+
+  .section h2 {
+    font-size: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="ck-header">
+  <a href="index.html" class="ck-logo">
+    CK
+    <span>TOITURE & FAÇADE</span>
+  </a>
+
+  <button class="menu-toggle" type="button"
+  aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+  <nav class="ck-nav">
+    <a href="index.html">Accueil</a>
+    <a href="index.html#services">Nos services</a>
+    <a href="index.html#realisations">Réalisations</a>
+    <a href="index.html#avis">Avis clients</a>
+    <a href="index.html#contact" class="ck-contact">Demander un devis</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="badge">Peinture intérieure • Saumur & alentours</span>
+
+    <h1>Peinture intérieure et rénovation de vos espaces</h1>
+
+    <p>
+      Donnez une nouvelle ambiance à votre intérieur grâce à des finitions
+      soignées et des peintures de qualité professionnelle.
+    </p>
+
+    <a class="btn" href="tel:0680014980">06 80 01 49 80</a>
+    <a class="btn btn-white" href="index.html#contact">Demander un devis gratuit</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Votre artisan peintre à Saumur</h2>
+
+  <div class="intro">
+    <p>
+      CK Toiture & Façade vous accompagne dans vos projets de peinture intérieure
+      et de rénovation. Que vous souhaitiez rafraîchir une pièce, moderniser
+      votre salon ou redonner de l'éclat à l'ensemble de votre habitation,
+      nous apportons un soin particulier à chaque étape du chantier.
+    </p>
+
+    <p>
+      Préparation des supports, protection des surfaces et application de
+      peintures adaptées : chaque détail compte pour obtenir un résultat
+      propre, harmonieux et durable.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Nos prestations de peinture intérieure</h2>
+
+  <div class="services">
+
+    <div class="card">
+      <h3>Peinture des murs</h3>
+      <p>
+        Rafraîchissement ou changement de couleur de vos murs.
+        Nous vous accompagnons dans le choix des teintes et des finitions
+        pour créer l'ambiance souhaitée.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Peinture des plafonds</h3>
+      <p>
+        Application de peinture adaptée aux plafonds pour obtenir
+        un rendu uniforme, lumineux et soigné.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Préparation des supports</h3>
+      <p>
+        Protection des sols et du mobilier, rebouchage des trous,
+        préparation et ponçage des surfaces avant peinture.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Rénovation intérieure</h3>
+      <p>
+        Modernisation de vos pièces, remise en peinture après travaux
+        et rafraîchissement de votre habitation.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Boiseries et finitions</h3>
+      <p>
+        Mise en peinture des portes, plinthes et boiseries
+        pour une finition harmonieuse.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Conseils couleurs</h3>
+      <p>
+        Accompagnement dans le choix des couleurs et des finitions
+        pour mettre en valeur votre intérieur.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="advantages">
+  <h2>Pourquoi choisir CK Toiture & Façade ?</h2>
+
+  <p>✔ Travail soigné et finitions de qualité</p>
+  <p>✔ Protection et préparation des surfaces</p>
+  <p>✔ Conseils personnalisés</p>
+  <p>✔ Devis gratuit et sans engagement</p>
+  <p>✔ Intervention à Saumur et dans les alentours</p>
+</section>
+
+<section class="section">
+  <h2>Votre projet de peinture intérieure</h2>
+
+  <div class="intro">
+    <p>
+      Vous souhaitez moderniser votre maison, rafraîchir vos murs
+      ou rénover vos plafonds ?
+      Contactez CK Toiture & Façade pour échanger sur votre projet
+      et obtenir un devis adapté à vos besoins.
+    </p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Envie d'un intérieur qui vous ressemble ?</h2>
+  <p>Parlons ensemble de votre projet de peinture intérieure.</p>
+
+  <a class="btn" href="tel:0680014980">Appeler le 06 80 01 49 80</a>
+  <a class="btn btn-white" href="mailto:Cedric.49@sfr.fr">Envoyer un e-mail</a>
+</section>
+
+<footer>
+  <p><strong>CK Toiture & Façade</strong></p>
+  <p>Peinture intérieure • Toiture • Façade • Rénovation</p>
+  <p>Saumur et alentours – Vivy (49)</p>
+  <p>06 80 01 49 80</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".ck-nav");
+
+  if (toggle && nav) {
+    toggle.addEventListener("click", function() {
+      const open = nav.classList.toggle("active");
+      toggle.textContent = open ? "✕" : "☰";
+      toggle.setAttribute("aria-expanded", String(open));
+    });
+  }
+});
+</script>
+
+</body>
+</html>
