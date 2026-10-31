@@ -428,13 +428,27 @@ footer {
     box-sizing: border-box;
   }
 
-  .ck-dropdown-content {
-    display: none;
-    position: static;
-    width: 100%;
-    box-shadow: none;
-    border-radius: 0;
+    .ck-dropdown.open .ck-dropdown-content {
+    display: block;
+  }
 
+  .ck-dropdown-content a {
+    padding-left: 25px;
+  }
+
+  .ck-contact {
+    text-align: center !important;
+  }
+}
+
+.ck-header {
+  position: sticky;
+  top: 0;
+}
+
+.ck-dropdown.open .ck-dropdown-content {
+  display: block;
+}
 </style>
 </head>
 
