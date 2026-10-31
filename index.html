@@ -368,6 +368,171 @@ footer {
   transition: 0.3s;
 }
 
+ 
+/* MENU CK TOITURE & FACADE */
+
+.ck-header {
+  width: 100%;
+  min-height: 75px;
+  padding: 12px 5%;
+  background: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+.ck-logo {
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.ck-logo span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #f28c00;
+}
+
+.ck-nav {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.ck-nav > a,
+.ck-dropbtn {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 0;
+  font-family: inherit;
+  transition: color .3s;
+}
+
+.ck-nav > a:hover,
+.ck-dropbtn:hover {
+  color: #f28c00;
+}
+
+.ck-dropdown {
+  position: relative;
+}
+
+.ck-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 265px;
+  background: #1b1b1b;
+  border-top: 3px solid #f28c00;
+  box-shadow: 0 8px 20px #0005;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+}
+
+.ck-dropdown:hover .ck-dropdown-content,
+.ck-dropdown:focus-within .ck-dropdown-content {
+  display: block;
+}
+
+.ck-dropdown-content a {
+  display: block;
+  padding: 13px 17px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  transition: .3s;
+}
+
+.ck-dropdown-content a:hover {
+  background: #f28c00;
+  color: #111;
+}
+
+.ck-contact {
+  background: #f28c00;
+  color: #111 !important;
+  padding: 13px 18px !important;
+  border-radius: 4px;
+}
+
+.ck-contact:hover {
+  background: #ffffff;
+}
+
+.ck-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+/* VERSION MOBILE */
+
+@media (max-width: 850px) {
+  .ck-header {
+    flex-wrap: wrap;
+  }
+
+  .ck-toggle {
+    display: block;
+  }
+
+  .ck-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 15px 0;
+  }
+
+  .ck-nav.active {
+    display: flex;
+  }
+
+  .ck-nav > a,
+  .ck-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .ck-dropdown-content {
+    display: none;
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .ck-dropdown:hover .ck-dropdown-content {
+    display: none;
+  }
+
+  .ck-dropdown:focus-within .ck-dropdown-content {
+    display: block;
+  }
+
+  .ck-contact {
+    text-align: center !important;
+  }
+}
+
 </style>
 </head>
 
