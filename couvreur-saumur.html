@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,14 +7,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Couvreur à Saumur (49) | Réparation toiture - CK Toiture & Façade</title>
+<title>Couvreur à Saumur (49) | Réparation et Rénovation Toiture - CK Toiture & Façade</title>
 
-<meta name="description" content="CK Toiture & Façade, couvreur à Saumur. Réparation toiture, entretien couverture, rénovation, nettoyage et protection de votre toit en Maine-et-Loire. Devis gratuit.">
+<meta name="description" content="CK Toiture & Façade, artisan couvreur à Saumur et Vivy. Réparation de toiture, recherche de fuite, entretien, nettoyage et rénovation de couverture. Devis gratuit.">
 
 <meta name="robots" content="index, follow">
 
 <link rel="icon" href="/favicon.ico">
 
+<meta name="theme-color" content="#0d1b2a">
 
 <script type="application/ld+json">
 {
@@ -21,6 +23,7 @@
  "@type":"RoofingContractor",
  "name":"CK Toiture & Façade",
  "telephone":"+33680014980",
+ "url":"https://ck-toiture-façade.fr/",
  "address":{
    "@type":"PostalAddress",
    "streetAddress":"45 rue de la Dehaiserie",
@@ -28,18 +31,74 @@
    "addressLocality":"Vivy",
    "addressCountry":"FR"
  },
- "areaServed":"Saumur"
+ "areaServed":[
+   "Saumur",
+   "Vivy",
+   "Maine-et-Loire",
+   "Angers"
+ ]
 }
 </script>
 
-
 <style>
 
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    color: #0d1b2a;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 25px;
+}
+
+/* HEADER */
+
+header {
+    background: #0d1b2a;
+    padding: 18px 20px;
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #fca311;
+}
+
+/* HERO */
+
 .hero {
-    min-height: 470px;
+    min-height: 540px;
     background:
     linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
     url('hydrofuge-toiture.png') center/cover no-repeat;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,155 +107,546 @@
     color: white;
 }
 
-body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f5f5f5;
-color:#333;
-line-height:1.7;
+.hero-content {
+    max-width: 850px;
 }
 
-header{
-background:#0d1b2a;
-color:white;
-padding:30px;
-text-align:center;
+.hero h1 {
+    font-size: 43px;
+    color: white;
+    margin-bottom: 20px;
 }
 
-.container{
-max-width:1000px;
-margin:auto;
-background:white;
-padding:30px;
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
 }
 
-h1,h2{
-color:#0d1b2a;
+/* BOUTONS */
+
+.btn {
+    display: inline-block;
+    background: #fca311;
+    color: #111;
+    padding: 14px 24px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin: 8px;
+    transition: 0.3s;
 }
 
-.btn{
-display:block;
-background:#fca311;
-color:#111;
-padding:15px 25px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-margin-top:15px;
-text-align:center;
-max-width:350px;
+.btn:hover {
+    background: #e58d00;
+    transform: translateY(-2px);
 }
 
-.links{
-background:#eee;
-padding:20px;
-border-radius:10px;
+/* SECTIONS */
+
+.white {
+    background: white;
 }
 
-.links a{
-color:#0d1b2a;
-font-weight:bold;
+.intro {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
 }
 
-footer{
-background:#000;
-color:white;
-text-align:center;
-padding:20px;
+/* CARTES */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    border-bottom: 4px solid #fca311;
+}
+
+.card h3 {
+    color: #0d1b2a;
+}
+
+/* PHOTOS */
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.photos img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ETAPES */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.step {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.step strong {
+    display: block;
+    font-size: 28px;
+    color: #fca311;
+}
+
+/* FAQ */
+
+.faq {
+    background: white;
+    padding: 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.faq h3 {
+    color: #0d1b2a;
+}
+
+/* LIENS */
+
+.links {
+    background: #f1f1f1;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.links a {
+    color: #0d1b2a;
+    font-weight: bold;
+}
+
+/* CONTACT */
+
+.contact {
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILE */
+
+@media(max-width: 750px) {
+
+    .hero {
+        min-height: 470px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .photos {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        padding: 35px 18px;
+    }
+
 }
 
 </style>
 
 </head>
 
-
 <body>
-
 
 <header>
 
-<h1>Couvreur à Saumur - CK Toiture & Façade</h1>
+<div class="logo">
+CK <span>TOITURE & FAÇADE</span>
+</div>
+
+<p>Couverture • Peinture • Rénovation • Entretien</p>
+
+</header>
+
+
+<!-- BANNIERE -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Artisan couvreur à Saumur (49)</h1>
 
 <p>
-Travaux de toiture, réparation, entretien et rénovation en Maine-et-Loire
+Réparation, entretien et rénovation de toiture.
+CK Toiture & Façade prend soin de votre couverture
+pour protéger durablement votre habitation.
 </p>
 
 <a class="btn" href="tel:0680014980">
 📞 06 80 01 49 80
 </a>
 
-</header>
+<a class="btn" href="index.html#contact">
+Demander un devis gratuit
+</a>
+
+</div>
+
+</section>
 
 
+<!-- PRESENTATION -->
+
+<section class="white">
+
+<div class="container intro">
+
+<h2>Votre artisan couvreur à Saumur et ses alentours</h2>
+
+<p>
+CK Toiture & Façade vous accompagne dans vos travaux de couverture,
+d'entretien et de rénovation de toiture à Saumur, Vivy et dans
+les communes environnantes.
+</p>
+
+<p>
+Une toiture bien entretenue est essentielle pour protéger votre maison
+contre les intempéries, les infiltrations et les dégradations liées au temps.
+</p>
+
+<p>
+Nous étudions chaque projet afin de vous proposer des solutions adaptées
+à votre couverture et à l'état de votre habitation.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PRESTATIONS -->
+
+<section>
 
 <div class="container">
 
-<h2>Votre artisan couvreur à Saumur</h2>
-
-<p>
-CK Toiture & Façade intervient comme artisan couvreur à Saumur, Angers, Tours et dans les communes alentours.
-Nous réalisons l'entretien, la réparation et la rénovation de toiture pour protéger durablement votre habitation.
-</p>
-
-
-<p>
-Une toiture en mauvais état peut provoquer des infiltrations, des dégradations de charpente
-ou une perte de confort dans votre maison. Un entretien régulier permet de prolonger la durée
-de vie de votre couverture.
-</p>
-
-
-
 <h2>Nos prestations de couverture</h2>
 
+<div class="cards">
 
-<ul>
+<div class="card">
+<h3>Réparation de toiture</h3>
+<p>
+Remplacement d'ardoises ou d'éléments endommagés,
+intervention sur les défauts de couverture et réparations adaptées.
+</p>
+</div>
 
-<li>Réparation de toiture</li>
+<div class="card">
+<h3>Recherche de fuite</h3>
+<p>
+Inspection de la toiture afin de rechercher les points
+d'entrée d'eau et identifier les réparations nécessaires.
+</p>
+</div>
 
-<li>Recherche et réparation de fuite</li>
+<div class="card">
+<h3>Entretien de couverture</h3>
+<p>
+Entretien régulier de votre toiture pour préserver
+son état et limiter les dégradations.
+</p>
+</div>
 
-<li>Entretien de couverture</li>
+<div class="card">
+<h3>Nettoyage et démoussage</h3>
+<p>
+Nettoyage de toiture et traitement adapté
+pour limiter le développement des mousses et lichens.
+</p>
+</div>
 
-<li>Nettoyage et démoussage toiture</li>
+<div class="card">
+<h3>Traitement hydrofuge</h3>
+<p>
+Protection adaptée aux matériaux poreux afin
+de limiter leur absorption d'eau.
+</p>
+</div>
 
-<li>Traitement hydrofuge</li>
+<div class="card">
+<h3>Rénovation de toiture</h3>
+<p>
+Travaux de rénovation et remise en état
+de votre couverture selon les besoins du chantier.
+</p>
+</div>
 
-<li>Rénovation extérieure</li>
+</div>
 
-</ul>
+</div>
+
+</section>
 
 
+<!-- PHOTOS -->
+
+<section class="white">
+
+<div class="container">
+
+<h2>Entretien et rénovation de toiture</h2>
+
+<div class="photos">
+
+<img
+src="https://images.unsplash.com/photo-1635424710928-6f1f0e9c4d6c?auto=format&fit=crop&w=1000&q=85"
+alt="Toiture de maison"
+loading="lazy">
+
+<img
+src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"
+alt="Maison avec toiture rénovée"
+loading="lazy">
+
+</div>
+
+<p>
+Chaque toiture nécessite une attention particulière.
+L'état des matériaux, l'exposition aux intempéries et l'ancienneté
+de la couverture sont pris en compte avant toute intervention.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ETAPES -->
+
+<section>
+
+<div class="container">
+
+<h2>Les étapes de notre intervention</h2>
+
+<div class="steps">
+
+<div class="step">
+<strong>01</strong>
+<h3>Diagnostic</h3>
+<p>Examen de votre toiture et identification des besoins.</p>
+</div>
+
+<div class="step">
+<strong>02</strong>
+<h3>Conseils</h3>
+<p>Proposition des travaux adaptés à votre couverture.</p>
+</div>
+
+<div class="step">
+<strong>03</strong>
+<h3>Intervention</h3>
+<p>Réalisation des travaux avec soin.</p>
+</div>
+
+<div class="step">
+<strong>04</strong>
+<h3>Contrôle</h3>
+<p>Vérification des travaux réalisés.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- POURQUOI NOUS -->
+
+<section class="white">
+
+<div class="container">
 
 <h2>Pourquoi choisir CK Toiture & Façade ?</h2>
 
 <p>
-
-Notre entreprise accompagne les particuliers pour leurs travaux de rénovation extérieure.
-Nous privilégions un travail soigné, des produits professionnels et un accompagnement personnalisé.
-
+Faire appel à CK Toiture & Façade, c'est bénéficier
+d'un accompagnement personnalisé pour vos travaux
+de couverture et de rénovation extérieure.
 </p>
 
+<ul>
 
-<h2>Zone d'intervention</h2>
+<li>Conseils adaptés à votre habitation</li>
+
+<li>Travail soigné et finitions de qualité</li>
+
+<li>Solutions adaptées à votre toiture</li>
+
+<li>Devis gratuit et personnalisé</li>
+
+<li>Intervention à Saumur et dans les alentours</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<!-- ZONE -->
+
+<section>
+
+<div class="container">
+
+<h2>Votre couvreur à Saumur, Vivy et alentours</h2>
 
 <p>
-Nous intervenons à Saumur, Vivy et dans tout le Maine-et-Loire (49).
+Nous intervenons notamment à Saumur, Vivy et dans les communes
+environnantes du Maine-et-Loire (49).
 </p>
 
+<p>
+Pour vos travaux de toiture, contactez CK Toiture & Façade
+afin d'étudier votre projet.
+</p>
 
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="white">
+
+<div class="container">
+
+<h2>Questions fréquentes sur la couverture</h2>
+
+<div class="faq">
+
+<h3>Quand faut-il faire vérifier sa toiture ?</h3>
+
+<p>
+Un contrôle régulier est conseillé, notamment après
+de fortes intempéries ou lorsque des signes de dégradation
+apparaissent.
+</p>
+
+</div>
+
+<div class="faq">
+
+<h3>Que faire en cas de fuite de toiture ?</h3>
+
+<p>
+Il est important de faire examiner rapidement la couverture
+afin d'identifier l'origine de l'infiltration et de déterminer
+les réparations nécessaires.
+</p>
+
+</div>
+
+<div class="faq">
+
+<h3>Pourquoi entretenir sa toiture ?</h3>
+
+<p>
+L'entretien permet de surveiller l'état des matériaux,
+d'identifier les éventuels problèmes et de préserver
+la couverture dans le temps.
+</p>
+
+</div>
+
+<div class="faq">
+
+<h3>Intervenez-vous autour de Saumur ?</h3>
+
+<p>
+Oui, CK Toiture & Façade intervient à Saumur, Vivy
+et dans les communes environnantes du Maine-et-Loire.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AUTRES SERVICES -->
+
+<section>
+
+<div class="container">
 
 <div class="links">
 
 <h2>Découvrez nos autres services</h2>
 
-
 <p>
 ➡️ <a href="nettoyage-toiture.html">
-Nettoyage toiture à Saumur
+Nettoyage et démoussage toiture à Saumur
 </a>
 </p>
 
+<p>
+➡️ <a href="traitement-hydrofuge.html">
+Traitement hydrofuge toiture et façade
+</a>
+</p>
 
 <p>
 ➡️ <a href="peinture-facade.html">
@@ -204,43 +654,59 @@ Peinture façade et ravalement
 </a>
 </p>
 
-
 <p>
 ➡️ <a href="renovation-toiture.html">
 Rénovation de toiture
 </a>
 </p>
 
+</div>
 
 </div>
 
+</section>
 
-<br>
 
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>Besoin d'un couvreur à Saumur ?</h2>
+
+<p>
+Contactez CK Toiture & Façade pour vos travaux
+de réparation, d'entretien ou de rénovation de toiture.
+</p>
+
+<p>
+Saumur • Vivy • Angers • Maine-et-Loire
+</p>
+
+<a class="btn" href="tel:0680014980">
+📞 06 80 01 49 80
+</a>
 
 <a class="btn" href="index.html#contact">
 Demander un devis gratuit
 </a>
 
- <a class="btn" href="index.html">
-⬅ Retour à l'accueil CK Toiture & Façade
-</a>
-
-</div>
-
+</section>
 
 
 <footer>
 
-<p>CK Toiture & Façade</p>
+<p><strong>CK Toiture & Façade</strong></p>
 
-<p>SIRET 10115008400016</p>
+<p>Artisan couvreur à Saumur (49)</p>
 
-<p>Artisan rénovation toiture et façade - Saumur (49)</p>
+<p>Réparation et rénovation toiture - Saumur et alentours</p>
+
+<p>06 80 01 49 80</p>
+
+<p>© CK Toiture & Façade - Tous droits réservés</p>
 
 </footer>
 
-
 </body>
 
-  </html>
+</html>
