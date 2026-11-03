@@ -6,91 +6,49 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Peinture façade à Saumur (49) | Ravalement façade - CK Toiture</title>
+<title>Peinture façade à Saumur (49) | Ravalement - CK Toiture & Façade</title>
 
-<meta name="description" content="Peinture façade à Saumur par CK Toiture & Façade. Ravalement, rénovation extérieure, nettoyage et protection des murs de votre maison en Maine-et-Loire.">
+<meta name="description" content="CK Toiture & Façade réalise vos travaux de peinture façade et ravalement à Saumur, Vivy et alentours. Nettoyage, préparation et rénovation de façade. Devis gratuit.">
 
 <meta name="robots" content="index, follow">
 
-<link rel="icon" href="/favicon.ico">
-
-
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"HomeAndConstructionBusiness",
- "name":"CK Toiture & Façade",
- "telephone":"+33680014980",
- "address":{
-   "@type":"PostalAddress",
-   "streetAddress":"45 rue de la Dehaiserie",
-   "postalCode":"49680",
-   "addressLocality":"Vivy",
-   "addressCountry":"FR"
- },
- "areaServed":"Saumur"
-}
-</script>
-
+<link rel="icon" type="image/png" href="/favicon.png">
 
 <style>
 
-body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f5f5f5;
-color:#333;
-line-height:1.7;
+:root {
+    --orange: #fca311;
+    --black: #111111;
+    --dark: #0d1b2a;
+    --light: #f5f5f5;
 }
 
-header{
-background:#0d1b2a;
-color:white;
-padding:30px;
-text-align:center;
+* {
+    box-sizing: border-box;
 }
 
-.container{
-max-width:1000px;
-margin:auto;
-background:white;
-padding:30px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: #333;
+    line-height: 1.7;
 }
 
-h1,h2{
-color:#0d1b2a;
+/* HEADER */
+
+header {
+    background: var(--black);
+    color: white;
+    text-align: center;
+    padding: 18px 15px;
 }
 
-.btn{
-display:block;
-background:#fca311;
-color:#111;
-padding:15px 25px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-margin-top:15px;
-text-align:center;
-max-width:350px;
+header p {
+    margin: 5px 0;
 }
 
-.links{
-background:#eee;
-padding:20px;
-border-radius:10px;
-}
-
-.links a{
-color:#0d1b2a;
-font-weight:bold;
-}
-
-footer{
-background:#000;
-color:white;
-text-align:center;
-padding:20px;
-}
+/* HERO */
 
 .hero {
     min-height: 470px;
@@ -113,6 +71,7 @@ padding:20px;
     font-size: 42px;
     line-height: 1.3;
     margin-bottom: 20px;
+    color: white;
 }
 
 .hero h1 span {
@@ -120,9 +79,11 @@ padding:20px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 30px;
 }
+
+/* BOUTONS */
 
 .btn {
     display: inline-block;
@@ -133,6 +94,7 @@ padding:20px;
     text-decoration: none;
     font-weight: 700;
     transition: 0.3s;
+    margin: 6px;
 }
 
 .btn:hover {
@@ -140,164 +102,458 @@ padding:20px;
     transform: translateY(-2px);
 }
 
+/* CONTENU */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 25px;
+    background: white;
+}
+
+h2 {
+    color: var(--dark);
+    font-size: 27px;
+    margin-top: 35px;
+}
+
+h2 span {
+    color: var(--orange);
+}
+
+.intro {
+    font-size: 18px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.service {
+    background: #f5f5f5;
+    padding: 22px;
+    border-left: 4px solid var(--orange);
+    border-radius: 7px;
+}
+
+.service h3 {
+    margin-top: 0;
+    color: var(--dark);
+}
+
+.etapes {
+    background: #0d1b2a;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.etapes h2 {
+    color: var(--orange);
+    margin-top: 0;
+}
+
+.etapes li {
+    margin-bottom: 12px;
+}
+
+/* ZONE ET LIENS */
+
+.zone {
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.links {
+    background: #eeeeee;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.links a {
+    color: #0d1b2a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #fca311;
+}
+
+/* FAQ */
+
+.faq {
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq h3 {
+    color: var(--dark);
+    font-size: 18px;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    background: #0d1b2a;
+    color: white;
+    padding: 40px 20px;
+}
+
+.contact h2 {
+    color: white;
+    margin-top: 0;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 25px 18px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+}
+
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "CK Toiture & Façade",
+  "telephone": "+33680014980",
+  "url": "https://xn--ck-toiture-faade-opb.fr/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "45 rue de la Dehaiserie",
+    "postalCode": "49680",
+    "addressLocality": "Vivy",
+    "addressCountry": "FR"
+  },
+  "areaServed": [
+    "Saumur",
+    "Vivy",
+    "Longué-Jumelles",
+    "Angers"
+  ]
+}
+</script>
 
 </head>
 
-
 <body>
 
-
 <header>
-
-<h1>Peinture façade à Saumur</h1>
-
-<p>
-Ravalement, rénovation et protection de vos façades
-</p>
-
-<a class="btn" href="tel:0680014980">
-📞 06 80 01 49 80
-</a>
-
+    <strong>CK TOITURE & FAÇADE</strong>
+    <p>Couverture • Peinture • Rénovation • Entretien</p>
 </header>
 
+<!-- BANNIERE -->
 
+<section class="hero">
 
-<div class="container">
+    <div class="hero-content">
 
-<h2>Votre spécialiste peinture façade à Saumur</h2>
+        <h1>
+            Peinture façade à <span>Saumur (49)</span>
+        </h1>
 
+        <p>
+            Ravalement, rénovation et protection de vos façades.
+            Redonnez une seconde jeunesse à votre maison.
+        </p>
 
-<p>
-Les façades de votre maison sont exposées aux intempéries, à l'humidité
-et à la pollution. Avec le temps, la peinture peut perdre son éclat,
-s'écailler ou laisser apparaître des traces.
-</p>
+        <a class="btn" href="tel:0680014980">
+            📞 06 80 01 49 80
+        </a>
 
+        <a class="btn" href="index.html#contact">
+            Demander un devis gratuit
+        </a>
 
-<p>
-CK Toiture & Façade réalise vos travaux de peinture façade et rénovation
-extérieure à Saumur et dans le Maine-et-Loire.
-</p>
+    </div>
 
+</section>
 
+<!-- PRESENTATION -->
 
-<h2>Nos travaux de façade</h2>
+<main class="container">
 
+    <h2>Votre artisan pour la peinture façade à Saumur</h2>
 
-<ul>
+    <p class="intro">
+        Avec le temps, les façades de votre maison subissent les
+        intempéries, l'humidité, la pollution et les variations
+        de température.
+    </p>
 
-<li>Nettoyage des façades</li>
+    <p>
+        CK Toiture & Façade vous accompagne dans vos projets de
+        peinture extérieure et de ravalement de façade à Saumur
+        et dans les communes environnantes.
+    </p>
 
-<li>Préparation des supports</li>
+    <p>
+        Notre objectif : redonner un aspect propre et esthétique
+        à votre habitation tout en contribuant à protéger vos murs.
+    </p>
 
-<li>Traitement des fissures</li>
+    <!-- PRESTATIONS -->
 
-<li>Peinture extérieure professionnelle</li>
+    <h2>Nos prestations de peinture et rénovation façade</h2>
 
-<li>Protection contre les intempéries</li>
+    <div class="service-grid">
 
-<li>Rénovation esthétique de votre habitation</li>
+        <div class="service">
+            <h3>Nettoyage de façade</h3>
+            <p>
+                Nettoyage des murs extérieurs pour éliminer les
+                salissures et préparer les supports.
+            </p>
+        </div>
 
-</ul>
+        <div class="service">
+            <h3>Préparation des supports</h3>
+            <p>
+                Préparation des surfaces, grattage des parties
+                non adhérentes et traitement adapté des fissures.
+            </p>
+        </div>
 
+        <div class="service">
+            <h3>Peinture extérieure</h3>
+            <p>
+                Application de peinture de façade adaptée au
+                support pour un résultat esthétique et durable.
+            </p>
+        </div>
 
+        <div class="service">
+            <h3>Ravalement de façade</h3>
+            <p>
+                Rénovation de vos murs extérieurs pour améliorer
+                l'apparence générale de votre habitation.
+            </p>
+        </div>
 
-<h2>Pourquoi rénover sa façade ?</h2>
+        <div class="service">
+            <h3>Protection des façades</h3>
+            <p>
+                Solutions de protection adaptées à la nature
+                des matériaux et à leur état.
+            </p>
+        </div>
 
+        <div class="service">
+            <h3>Conseils personnalisés</h3>
+            <p>
+                Conseils sur les finitions, les couleurs et les
+                produits adaptés à votre façade.
+            </p>
+        </div>
 
-<p>
-Une façade entretenue améliore l'apparence de votre maison et contribue
-à préserver vos murs contre les agressions extérieures.
-Une rénovation permet également de valoriser votre patrimoine immobilier.
-</p>
+    </div>
 
+    <!-- ETAPES -->
 
+    <div class="etapes">
 
-<h2>Un artisan proche de Saumur</h2>
+        <h2>Comment se déroule votre chantier ?</h2>
 
+        <ol>
+            <li>Évaluation de l'état de votre façade.</li>
+            <li>Nettoyage et préparation des supports.</li>
+            <li>Réparation des défauts et fissures si nécessaire.</li>
+            <li>Application des produits et de la peinture adaptés.</li>
+            <li>Contrôle des finitions et nettoyage du chantier.</li>
+        </ol>
 
-<p>
-Nous intervenons à Saumur, Vivy, Angers, Longué-Jumelles et dans les communes environnantes
-pour vos projets de peinture extérieure, toiture et rénovation d'habitat.
-</p>
+    </div>
 
+    <!-- AVANTAGES -->
 
+    <h2>Pourquoi choisir CK Toiture & Façade ?</h2>
 
+    <ul>
+        <li>Artisan local basé à Vivy.</li>
+        <li>Intervention à Saumur et alentours.</li>
+        <li>Travail soigné et conseils personnalisés.</li>
+        <li>Devis et déplacement gratuits.</li>
+        <li>Solutions adaptées à votre habitation.</li>
+    </ul>
 
-<div class="links">
+    <!-- ZONE -->
 
-<h2>Découvrez nos autres services</h2>
+    <div class="zone">
 
+        <h2>Votre artisan peintre à Saumur et alentours</h2>
 
-<p>
-➡️ <a href="couvreur-saumur.html">
-Couvreur à Saumur
-</a>
-</p>
+        <p>
+            CK Toiture & Façade intervient pour vos travaux
+            de peinture extérieure et de rénovation dans le
+            secteur de :
+        </p>
 
+        <p>
+            <strong>
+            Saumur, Vivy, Longué-Jumelles, Angers et les
+            communes environnantes du Maine-et-Loire (49).
+            </strong>
+        </p>
 
-<p>
-➡️ <a href="nettoyage-toiture.html">
-Nettoyage toiture et démoussage
-</a>
-</p>
+    </div>
 
+    <!-- FAQ -->
 
-<p>
-➡️ <a href="renovation-toiture.html">
-Rénovation toiture
-</a>
-</p>
+    <h2>Questions fréquentes sur la peinture façade</h2>
 
+    <div class="faq">
+        <h3>Quand faut-il refaire la peinture d'une façade ?</h3>
+        <p>
+            Lorsque la peinture s'écaille, se décolore ou que
+            des dégradations apparaissent, un diagnostic permet
+            de déterminer les travaux nécessaires.
+        </p>
+    </div>
 
-</div>
+    <div class="faq">
+        <h3>Faut-il nettoyer une façade avant de la peindre ?</h3>
+        <p>
+            Oui, la préparation est essentielle. Le support doit
+            être propre, sain et adapté à l'application du
+            revêtement choisi.
+        </p>
+    </div>
+
+    <div class="faq">
+        <h3>Intervenez-vous autour de Saumur ?</h3>
+        <p>
+            Oui, CK Toiture & Façade intervient à Saumur,
+            Vivy, Longué-Jumelles, Angers et dans tout le Maine-et-Loire.
+        </p>
+    </div>
+
+    <!-- AUTRES SERVICES -->
+
+    <div class="links">
+
+<!-- AVIS CLIENTS -->
 
 <h2>Avis de nos clients</h2>
 
-<div style="background:#f8f8f8;padding:20px;border-radius:10px;margin-bottom:30px;">
+<div style="background:#f5f5f5;padding:20px;border-radius:10px;margin-bottom:30px;">
 
-<p><strong>⭐⭐⭐⭐⭐ Michel – Saumur</strong><br>
-"Très satisfait de la peinture de notre façade. Travail soigné, chantier propre et résultat impeccable."</p>
+    <p><strong>⭐⭐⭐⭐⭐ Michel – Saumur</strong><br>
+    "Très satisfait de la peinture de notre façade. Travail soigné et résultat impeccable."</p>
 
-<hr>
+    <hr>
 
-<p><strong>⭐⭐⭐⭐⭐ Nathalie – Vivy</strong><br>
-"Entreprise sérieuse, artisan à l'écoute et très professionnel. Je recommande CK Toiture & Façade."</p>
+    <p><strong>⭐⭐⭐⭐⭐ Nathalie – Vivy</strong><br>
+    "Entreprise sérieuse, artisan à l'écoute et travail professionnel."</p>
 
-<hr>
+    <hr>
 
-<p><strong>⭐⭐⭐⭐⭐ David – Longué-Jumelles</strong><br>
-"Excellent rapport qualité-prix. Les délais ont été respectés et la façade est comme neuve."</p>
-
-</div>
-
-<br>
-
-
-<a class="btn" href="index.html#contact">
-Demander un devis gratuit
-</a>
-<a class="btn" href="index.html">
-⬅ Retour à l'accueil CK Toiture & Façade
-</a>
+    <p><strong>⭐⭐⭐⭐⭐ David – Longué-Jumelles</strong><br>
+    "Très bon travail, chantier propre et délais respectés."</p>
 
 </div>
 
+        <h2>Découvrez nos autres services</h2>
 
+        <p>
+            ➡️ <a href="couvreur-saumur.html">
+            Couvreur à Saumur
+            </a>
+        </p>
+
+        <p>
+            ➡️ <a href="nettoyage-toiture.html">
+            Nettoyage toiture et démoussage
+            </a>
+        </p>
+
+        <p>
+            ➡️ <a href="renovation-toiture.html">
+            Rénovation toiture
+            </a>
+        </p>
+
+        <p>
+            ➡️ <a href="traitement-hydrofuge.html">
+            Traitement hydrofuge toiture et façade
+            </a>
+        </p>
+
+    </div>
+
+</main>
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+    <h2>Vous avez un projet de peinture façade ?</h2>
+
+    <p>
+        Contactez CK Toiture & Façade pour discuter
+        de votre projet et obtenir votre devis gratuit.
+    </p>
+
+    <a class="btn" href="tel:0680014980">
+        📞 06 80 01 49 80
+    </a>
+
+    <a class="btn" href="index.html#contact">
+        Demander un devis
+    </a>
+
+</section>
 
 <footer>
 
-<p>CK Toiture & Façade</p>
+    <p><strong>CK Toiture & Façade</strong></p>
 
-<p>SIRET 10115008400016</p>
+    <p>Peinture façade - Ravalement - Rénovation</p>
 
-<p>Peinture façade - Ravalement - Rénovation Saumur (49)</p>
+    <p>Artisan à Vivy - Saumur et alentours (49)</p>
 
 </footer>
 
-
 </body>
-
 </html>
