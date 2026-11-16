@@ -1,19 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nettoyage toiture à Saumur (49) | Démoussage & Hydrofuge - CK Toiture</title>
+<title>Nettoyage, Démoussage et Peinture Toiture à Saumur (49) | CK Toiture & Façade</title>
 
-<meta name="description" content="Nettoyage toiture à Saumur par CK Toiture & Façade. Démoussage, traitement anti-mousse et hydrofuge pour protéger durablement votre toiture en Maine-et-Loire.">
+<meta name="description" content="CK Toiture & Façade à Saumur : nettoyage, démoussage, traitement anti-mousse, hydrofuge et peinture de toiture. Demandez votre devis gratuit.">
 
 <meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="/favicon.png">
 
-<link rel="icon" href="/favicon.ico">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -21,6 +22,7 @@
  "@type":"RoofingContractor",
  "name":"CK Toiture & Façade",
  "telephone":"+33680014980",
+ "url":"https://xn--ck-toiture-faade-opb.fr/",
  "address":{
    "@type":"PostalAddress",
    "streetAddress":"45 rue de la Dehaiserie",
@@ -28,207 +30,569 @@
    "addressLocality":"Vivy",
    "addressCountry":"FR"
  },
- "areaServed":"Saumur"
+ "areaServed":["Saumur","Vivy","Angers","Maine-et-Loire"]
 }
 </script>
 
-
 <style>
+*{
+ box-sizing:border-box;
+}
+
+html{
+ scroll-behavior:smooth;
+}
 
 body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f5f5f5;
-color:#333;
-line-height:1.7;
+ margin:0;
+ font-family:'Poppins',Arial,sans-serif;
+ color:#222;
+ background:#f5f5f5;
+ line-height:1.7;
 }
 
 header{
-background:#0d1b2a;
-color:white;
-padding:30px;
-text-align:center;
+ background:#080808;
+ color:white;
+ padding:15px 5%;
+ border-bottom:4px solid #fca311;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ flex-wrap:wrap;
+ gap:15px;
 }
 
-.container{
-max-width:1000px;
-margin:auto;
-background:white;
-padding:30px;
+.logo{
+ font-size:25px;
+ font-weight:800;
+ line-height:1.2;
 }
 
-h1,h2{
-color:#0d1b2a;
+.logo span{
+ color:#fca311;
+}
+
+.logo small{
+ display:block;
+ font-size:11px;
+ font-weight:500;
+ color:#ddd;
+ letter-spacing:1px;
+}
+
+nav{
+ display:flex;
+ align-items:center;
+ gap:22px;
+ flex-wrap:wrap;
+}
+
+nav a{
+ color:white;
+ text-decoration:none;
+ font-size:14px;
+ font-weight:600;
+}
+
+nav a:hover{
+ color:#fca311;
+}
+
+.nav-btn{
+ background:#fca311;
+ color:#111;
+ padding:10px 18px;
+ border-radius:7px;
+}
+
+.hero{
+ min-height:430px;
+ display:flex;
+ align-items:center;
+ padding:55px 6%;
+ color:white;
+ background:
+ linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.25)),
+ url('nettoyage-toiture-hero.jpg') center/cover no-repeat;
+}
+
+.hero-content{
+ max-width:700px;
+}
+
+.hero h1{
+ font-size:clamp(30px,5vw,48px);
+ line-height:1.2;
+ margin:0 0 15px;
+}
+
+.orange{
+ color:#fca311;
+}
+
+.hero p{
+ font-size:20px;
+ margin-bottom:25px;
 }
 
 .btn{
-display:block;
-background:#fca311;
-color:#111;
-padding:15px 25px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-margin-top:15px;
-text-align:center;
-max-width:350px;
+ display:inline-block;
+ background:#fca311;
+ color:#111;
+ text-decoration:none;
+ font-weight:700;
+ padding:13px 25px;
+ border-radius:8px;
+ transition:.2s;
+}
+
+.btn:hover{
+ background:#ffb52e;
+ transform:translateY(-2px);
+}
+
+.btn-dark{
+ background:#111;
+ color:white;
+ border:2px solid #fca311;
+}
+
+section{
+ padding:55px 6%;
+}
+
+.container{
+ max-width:1150px;
+ margin:auto;
+}
+
+.section-title{
+ text-align:center;
+ margin-bottom:35px;
+}
+
+.section-title h2{
+ font-size:30px;
+ color:#111;
+ margin:0 0 10px;
+}
+
+.section-title span{
+ display:block;
+ width:90px;
+ height:4px;
+ background:#fca311;
+ margin:12px auto;
+}
+
+.intro{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:35px;
+ align-items:center;
+ background:white;
+}
+
+.intro h2{
+ font-size:29px;
+ line-height:1.3;
+ color:#111;
+}
+
+.intro p{
+ font-size:15px;
+}
+
+.photo{
+ width:100%;
+ border-radius:12px;
+ display:block;
+ object-fit:cover;
+}
+
+.services{
+ background:#eee;
+}
+
+.service-grid{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:18px;
+}
+
+.service-card{
+ background:white;
+ border-radius:10px;
+ padding:25px 15px;
+ text-align:center;
+ border-bottom:4px solid #fca311;
+}
+
+.service-card .icon{
+ font-size:36px;
+ margin-bottom:8px;
+}
+
+.service-card h3{
+ font-size:17px;
+ color:#111;
+ margin:5px 0;
+}
+
+.service-card p{
+ font-size:13px;
+ color:#555;
+}
+
+.before-after{
+ background:white;
+}
+
+.before-after img{
+ width:100%;
+ border-radius:12px;
+ display:block;
+}
+
+.benefits{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:35px;
+ align-items:center;
+}
+
+.benefits h2{
+ font-size:28px;
+ color:#111;
+}
+
+.benefits ul{
+ list-style:none;
+ padding:0;
+}
+
+.benefits li{
+ margin:12px 0;
+}
+
+.benefits li::before{
+ content:"✓";
+ color:#fca311;
+ font-weight:800;
+ font-size:21px;
+ margin-right:12px;
+}
+
+.local{
+ background:#111;
+ color:white;
+ border-radius:14px;
+ padding:30px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:25px;
+}
+
+.local h2{
+ margin:0;
+ font-size:24px;
+}
+
+.local p{
+ margin:8px 0 0;
 }
 
 .links{
-background:#eee;
-padding:20px;
-border-radius:10px;
+ background:#eee;
+ padding:30px;
+ border-radius:12px;
+ margin-top:40px;
 }
 
 .links a{
-color:#0d1b2a;
-font-weight:bold;
+ color:#111;
+ font-weight:600;
+ text-decoration:none;
+}
+
+.links a:hover{
+ color:#e58c00;
+}
+
+.cta{
+ text-align:center;
+ background:white;
+}
+
+.cta h2{
+ font-size:28px;
+ color:#111;
 }
 
 footer{
-background:#000;
-color:white;
-text-align:center;
-padding:20px;
+ background:#050505;
+ color:white;
+ text-align:center;
+ padding:30px 15px;
+ border-top:4px solid #fca311;
 }
 
+footer strong span{
+ color:#fca311;
+}
+
+@media(max-width:800px){
+ header{
+  justify-content:center;
+  text-align:center;
+ }
+ nav{
+  justify-content:center;
+ }
+ .intro,.benefits{
+  grid-template-columns:1fr;
+ }
+ .service-grid{
+  grid-template-columns:repeat(2,1fr);
+ }
+ .local{
+  flex-direction:column;
+  text-align:center;
+ }
+}
+
+@media(max-width:480px){
+ section{
+  padding:38px 5%;
+ }
+ .hero{
+  min-height:380px;
+  padding:35px 6%;
+ }
+ .hero p{
+  font-size:16px;
+ }
+ .service-grid{
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+ }
+ .service-card{
+  padding:18px 8px;
+ }
+ nav{
+  gap:12px;
+ }
+ nav a{
+  font-size:12px;
+ }
+}
 </style>
-
 </head>
-
 
 <body>
 
-
 <header>
+ <div class="logo">
+  CK Toiture <span>&</span> Façade
+  <small>COUVERTURE | PEINTURE | RÉNOVATION | ENTRETIEN</small>
+ </div>
 
-<h1>Nettoyage toiture à Saumur</h1>
-
-<p>
-Démoussage, traitement hydrofuge et entretien de toiture
-</p>
-
-<a class="btn" href="tel:0680014980">
-📞 06 80 01 49 80
-</a>
-
+ <nav>
+  <a href="index.html">Accueil</a>
+  <a href="couvreur-saumur.html">Couverture</a>
+  <a href="peinture-facade.html">Façade</a>
+  <a href="index.html#contact" class="nav-btn">Demander un devis</a>
+ </nav>
 </header>
 
+<div class="hero">
+ <div class="hero-content">
+  <h1>
+   Nettoyage, Démoussage<br>
+   et <span class="orange">Peinture toiture</span>
+  </h1>
 
+  <p>Redonnez une seconde jeunesse à votre toiture</p>
 
-<div class="container">
-
-<h2>Nettoyage et démoussage de toiture à Saumur</h2>
-
-
-<p>
-Avec le temps, les toitures se couvrent de mousses, lichens et salissures.
-Ces végétaux retiennent l'humidité et peuvent fragiliser les matériaux.
-CK Toiture & Façade réalise le nettoyage de toiture à Saumur et dans le Maine-et-Loire.
-</p>
-
-
-<p>
-Notre intervention permet de retrouver une toiture propre et de limiter
-les risques de dégradation liés aux intempéries.
-</p>
-
-
-
-<h2>Nos prestations de nettoyage toiture</h2>
-
-
-<ul>
-
-<li>Nettoyage complet de couverture</li>
-
-<li>Démoussage toiture</li>
-
-<li>Traitement anti-mousse</li>
-
-<li>Application d'un traitement hydrofuge protecteur</li>
-
-<li>Contrôle visuel de la couverture</li>
-
-</ul>
-
-
-
-
-<h2>Pourquoi entretenir sa toiture ?</h2>
-
-
-<p>
-Une toiture entretenue régulièrement conserve ses performances plus longtemps.
-Le nettoyage permet d'éviter l'accumulation d'humidité et protège votre habitation.
-</p>
-
-
-
-<h2>Un artisan local à votre service</h2>
-
-
-<p>
-CK Toiture & Façade intervient auprès des particuliers à Saumur, Vivy, Angers, Tours
-et dans les communes voisines pour vos travaux de toiture et rénovation extérieure.
-</p>
-
-
-
-<div class="links">
-
-<h2>Nos autres prestations</h2>
-
-
-<p>
-➡️ <a href="couvreur-saumur.html">
-Couvreur à Saumur
-</a>
-</p>
-
-
-<p>
-➡️ <a href="peinture-facade.html">
-Peinture façade Saumur
-</a>
-</p>
-
-
-<p>
-➡️ <a href="renovation-toiture.html">
-Rénovation toiture
-</a>
-</p>
-
-
+  <a class="btn" href="tel:0680014980">
+   ☎ 06 80 01 49 80
+  </a>
+ </div>
 </div>
 
+<section class="intro">
+ <div class="container" style="display:contents">
 
-<br>
+  <div>
+   <h2>Nettoyage et démoussage de toiture <span class="orange">à Saumur</span></h2>
 
+   <p>
+    Avec le temps, les toitures se couvrent de mousses,
+    lichens et salissures. Ces végétaux retiennent
+    l'humidité et peuvent fragiliser vos tuiles ou ardoises.
+   </p>
 
-<a class="btn" href="index.html#contact">
-Demander un devis gratuit
-</a>
-<a class="btn" href="index.html">
-⬅ Retour à l'accueil CK Toiture & Façade
-</a>
+   <p>
+    CK Toiture & Façade réalise le nettoyage,
+    le démoussage et la peinture de toiture à Saumur
+    et dans le Maine-et-Loire.
+   </p>
 
-</div>
+   <p>
+    Nous adaptons nos interventions à l'état de votre
+    couverture et à la nature des matériaux.
+   </p>
+  </div>
 
+  <div>
+   <img class="photo" src="toiture-avant-apres.jpg"
+   alt="Exemple de toiture avant et après nettoyage">
+  </div>
 
+ </div>
+</section>
+
+<section class="services">
+ <div class="container">
+
+  <div class="section-title">
+   <h2>Nos <span class="orange">prestations toiture</span></h2>
+   <span></span>
+  </div>
+
+  <div class="service-grid">
+
+   <div class="service-card">
+    <div class="icon">🧹</div>
+    <h3>Nettoyage toiture</h3>
+    <p>Nettoyage de votre couverture pour retirer les salissures.</p>
+   </div>
+
+   <div class="service-card">
+    <div class="icon">🌿</div>
+    <h3>Démoussage</h3>
+    <p>Élimination des mousses et lichens avec un traitement adapté.</p>
+   </div>
+
+   <div class="service-card">
+    <div class="icon">💧</div>
+    <h3>Traitement hydrofuge</h3>
+    <p>Protection de la toiture contre la pénétration de l'eau.</p>
+   </div>
+
+   <div class="service-card">
+    <div class="icon">🖌️</div>
+    <h3>Peinture toiture</h3>
+    <p>Rénovation et embellissement de votre couverture.</p>
+   </div>
+
+  </div>
+ </div>
+</section>
+
+<section class="before-after">
+ <div class="container">
+  <div class="section-title">
+   <h2>Une toiture rénovée et <span class="orange">embellie</span></h2>
+   <span></span>
+   <p>Le nettoyage et la rénovation redonnent de l'éclat à votre toiture.</p>
+  </div>
+
+  <img src="toiture-avant-apres.jpg"
+  alt="Toiture avant et après nettoyage et rénovation">
+ </div>
+</section>
+
+<section>
+ <div class="container benefits">
+
+  <div>
+   <h2>Pourquoi entretenir sa toiture ?</h2>
+
+   <p>
+    Une toiture entretenue régulièrement conserve
+    son aspect et ses performances plus longtemps.
+   </p>
+
+   <ul>
+    <li>Limiter l'accumulation de mousses et de lichens</li>
+    <li>Préserver l'état de votre couverture</li>
+    <li>Protéger votre toiture contre l'humidité</li>
+    <li>Améliorer l'esthétique de votre maison</li>
+    <li>Prolonger la durée de vie de votre toiture</li>
+   </ul>
+  </div>
+
+  <div>
+   <img class="photo"
+   src="nettoyage-toiture-hero.jpg"
+   alt="Nettoyage professionnel d'une toiture">
+  </div>
+
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <div class="local">
+   <div>
+    <h2>Un artisan local à <span class="orange">votre service</span></h2>
+    <p>
+     CK Toiture & Façade intervient auprès des particuliers
+     à Saumur, Vivy, Angers et dans les communes voisines.
+     Pour vos travaux de nettoyage, démoussage et peinture toiture.
+    </p>
+   </div>
+
+   <a class="btn" href="index.html#contact">
+    Demander un devis gratuit
+   </a>
+  </div>
+
+  <div class="links">
+   <h2>Découvrez nos autres prestations</h2>
+
+   <p>➡ <a href="couvreur-saumur.html">Couvreur à Saumur</a></p>
+
+   <p>➡ <a href="peinture-facade.html">Peinture façade Saumur</a></p>
+
+   <p>➡ <a href="traitement-hydrofuge.html">Traitement hydrofuge toiture et façade</a></p>
+
+   <p>➡ <a href="renovation-toiture.html">Rénovation toiture</a></p>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container">
+  <h2>Votre toiture a besoin d'un <span class="orange">nouveau souffle ?</span></h2>
+
+  <p>Contactez CK Toiture & Façade pour obtenir votre devis gratuit.</p>
+
+  <a class="btn" href="tel:0680014980">☎ 06 80 01 49 80</a>
+
+  <br><br>
+
+  <a class="btn btn-dark" href="index.html#contact">
+   Demander un devis
+  </a>
+
+  <br><br>
+
+  <a href="index.html" style="color:#111;font-weight:600;text-decoration:none">
+   ← Retour à l'accueil
+  </a>
+ </div>
+</section>
 
 <footer>
-
-<p>CK Toiture & Façade</p>
-
-<p>SIRET 10115008400016</p>
-
-<p>Nettoyage toiture - Démoussage - Hydrofuge Saumur (49)</p>
-
+ <strong>CK Toiture <span>&</span> Façade</strong>
+ <p>Nettoyage toiture - Démoussage - Hydrofuge - Peinture toiture</p>
+ <p>Saumur (49) et alentours</p>
 </footer>
 
-
 </body>
-
 </html>
+
